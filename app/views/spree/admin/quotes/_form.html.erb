@@ -1,12 +1,6 @@
 <div data-hook="admin_user_form_fields" class="row">
   <div class="col-md-12">
-    <%= f.field_container :description, class: ['form-group'] do %>
-      <%= f.label :description, Spree::Quote.human_attribute_name(:description) %>
-      <% description_max_limit = ::SpreeQuotesManagement::Config[:max_char_in_quotes] %>
-      <%= f.text_area :description, { rows: 4, maxlength: description_max_limit, data: { 'max-limit': description_max_limit }, class: 'form-control', id: 'quote_description'} %>
-      <span id='span-char-left' class='pull-right'></span>
-      <%= f.error_message_on :description %>
-    <% end %>
+    
   </div>
   <div class="col-md-6">
     <%= f.field_container :author_name, class: ['form-group'] do %>
